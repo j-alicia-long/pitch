@@ -43,41 +43,49 @@ This was my motivation for taking your class, and it's why I believe in what you
 - I genuinely enjoy **talking with people about their projects** — and about their relationship with AI
 
 ### Card: Engineering wisdom
-- Flagged the classic pitfalls for classmates: **scope bloat**, and too much planning without enough **building & iterating**
+- Taught classmates about **GitHub**
+- Shared eng pitfalls for classmates: **scope bloat**, and too much planning without enough **building & iterating**
 - Tried out classmates' projects and gave **hands-on user-testing feedback**
 
-**Aside note:** Since the curriculum has a lot of students who've never written code, having more engineers on call fills a real gap — the kind of debugging that unblocks someone in five minutes instead of derailing their whole week.
+**Aside note:** Since the cohort has many students who've never written code, having more engineers on call fills a real gap — the kind of debugging that unblocks someone in five minutes instead of derailing their whole week.
 
 ---
 
 ## 03 — Proof I ship ("Built weekly, demoed Saturdays, *live now*.")
 
-### AI Carbon Footprint — tag: accelerator build
-Link: https://j-alicia-long.github.io/footprint/
-What does an everyday AI activity cost the planet? Preset scenarios translated into energy, carbon, and familiar equivalents — every number cited, with uncertainty bands.
-
-### AI Spend Tracker — tag: accelerator build
-Link: https://github.com/j-alicia-long/ai-spend-tracker
-Tracks what AI coding agents actually cost — multi-source ingest into a local store, priced at API-equivalent value, synced to a private dashboard.
+My main interests are around productivity, visualization, and AI agent workflows. In addition to finding and building my own tools, I also built trackers for the cost and carbon of my own AI use (two of the projects below), because the operational and environmental impact of this work matters to me. I also make creative passion projects!
 
 ### Todo Now — tag: daily driver
 Link: https://j-alicia-long.github.io/todo-now/
-A personalized to-do PWA that lives on my phone — built to surface a small, doable set of options when I'm overwhelmed, instead of a guilt-inducing wall of tasks.
-
+A personalized to-do PWA that lives on my phone — built to track and prioritize tasks across all areas of my life that works for my brain.
+### In-page Bug Reporter + auto-triage — tag: built into Todo Now
+Link: https://github.com/j-alicia-long/todo-now
+Screenshot: https://github.com/j-alicia-long/todo-now/raw/main/docs/screenshot-reporter.png
+A bug reporter built right into my todo app — shake my phone (or ⌘⇧P on desktop) to enter Report Mode, tap the elements involved, and the report files itself as a GitHub issue at the source, instead of getting lost in a notes app. A GitHub Actions automation then triages the issues and fixes the bugs automatically.
+### AI Carbon Footprint — tag: accelerator build
+Link: https://j-alicia-long.github.io/footprint/
+What does an everyday AI activity cost the planet? Preset scenarios translated into energy, carbon, and familiar equivalents — every number cited, with uncertainty bands.
+### AI Spend Tracker — tag: accelerator build
+Link: https://github.com/j-alicia-long/ai-spend-tracker
+Tracks what my AI coding agents actually cost per session across tools — multi-source ingest into a local store, priced at API-equivalent value, synced to a private dashboard.
 ### Flight → Google Calendar — tag: chrome extension
 Link: https://github.com/j-alicia-long/flight-to-gcal
-Auto-detects flight confirmation emails in Gmail (40+ airlines) or takes an .ics upload, then adds the trip to Google Calendar in one click.
+A simple regex and local LLM-backed tool that takes flight confirmations in Gmail, then adds the trip to Google Calendar in one click.
+### Ravenwood Rush — tag: co-op browser game
+Link: (private repo for now — no public link)
+Screenshot: assets/ravenwood-rush.png
+A Wizard101-themed co-op minigame that runs right in the browser — restore Bartleby's wards before the shadow falls! Peer-to-peer multiplayer over PeerJS, canvas rendering, and no build step. Built purely for fun, with the same TDD-with-agents workflow as everything else.
+
+
 
 ---
 
 ## 04 — What I took away ("The class *changed how I build* — here's the trail it left.")
+I've collected my favorite skills, keep running docs on agents and MCP servers, and practiced test-driven development.
 
-- **Used a bunch of new AI and SWE tooling** — AI agent ecosystems like Zo, Claude Code, Copilot, and Codex. Deployment infra including Cloudflare, Zo, and Github actions + Pages.
-- **Compiled a personal skills library** — https://github.com/j-alicia-long/skill-library — portable AI skills that work across tools and projects.
-- **Learned to apply structured engineering practices to AI development** — via skills like Matt Pocock's /grill-me, which interrogates a plan before any code gets written.
-    - **Built a web-config repo** — my own AGENTS template files, pre-commit hooks, linters, and the rest — so every new project starts with good defaults instead of a blank page.
-- **Started personalizing my productivity tools** — like a custom Todo app, and using Obsidian as a personal notes vault.
-- **Explored ways to track and optimize my AI usage** — which turned into the spend tracker and carbon footprint projects above.
+- **Got flexible across workflows** — using skills systematically to streamline my engineering flows and reduce review burnout, and using the same tools creatively — prototyping passion projects, or running \`/grill-me\` as a research interview.
+- **Created my harness** — a [**web-config repo**](https://github.com/j-alicia-long/web-config), parallel role sessions, test-driven development with agents, and my own running docs on agents and MCP servers. I love that I can apply structured engineering practices to AI development!
+- **Compiled a personal skills library** — https://github.com/j-alicia-long/skill-library — portable AI skills that work across tools and projects. My favorites include Matt Pocock's `/grill-me` and `/tdd`, Emil Kowalski's animation & design, and \`/i-have-adhd\`.
 - **Feeling a lot more organized — and inspired to build!**
 
 ---
@@ -95,7 +103,7 @@ Auto-detects flight confirmation emails in Gmail (40+ airlines) or takes an .ics
 
 ## 06 — The ask ("Can we make this *official*?")
 
-If this sounds useful, I'd love to talk about what a TA role could look like for the next cohort, or how we can put together a small group of volunteer TAs together.
+If this sounds helpful, I'd love to talk about what a TA role could look like for the next cohort, or how we can put together a small group of volunteer TAs together.
 
 Either way, I'd love to be able to continue participating in this community and having conversations with y'all about the crazy, exciting times we live in.
 

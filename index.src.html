@@ -202,6 +202,18 @@
     color: var(--ink-soft);
     font-size: 1.05rem;
   }
+  .lede {
+    max-width: 62ch;
+    margin: -6px 0 32px;
+    color: var(--ink-soft);
+  }
+  code {
+    font-family: 'Spline Sans Mono', monospace;
+    font-size: 0.82em;
+    background: rgba(43,36,26,0.07);
+    padding: 1px 6px;
+    border-radius: 3px;
+  }
   /* ---------- projects ---------- */
   .projects {
     display: grid;
@@ -419,12 +431,13 @@
         <div class="card">
           <h3>Engineering wisdom</h3>
           <ul>
-            <li>Flagged the classic pitfalls for classmates: <strong>scope bloat</strong>, and too much planning without enough <strong>building &amp; iterating</strong></li>
+            <li>Taught classmates about <strong>GitHub</strong></li>
+            <li>Shared eng pitfalls for classmates: <strong>scope bloat</strong>, and too much planning without enough <strong>building &amp; iterating</strong></li>
             <li>Tried out classmates' projects and gave <strong>hands-on user-testing feedback</strong></li>
           </ul>
         </div>
       </div>
-      <p class="aside-note">Since the curriculum has a lot of students who've never written code, having more engineers on call fills a real gap — the kind of debugging that unblocks someone in five minutes instead of derailing their whole week.</p>
+      <p class="aside-note">Since the cohort has many students who've never written code, having more engineers on call fills a real gap — the kind of debugging that unblocks someone in five minutes instead of derailing their whole week.</p>
     </div>
   </section>
 
@@ -432,7 +445,24 @@
     <div class="margin-label"><span class="num">03</span>proof i ship</div>
     <div>
       <h2>Built weekly, demoed Saturdays, <em>live now</em>.</h2>
+      <p class="lede">My main interests are around productivity, visualization, and AI agent workflows. In addition to finding and building my own tools, I also built trackers for the cost and carbon of my own AI use (two of the projects below), because the operational and environmental impact of this work matters to me. I also make creative passion projects!</p>
       <div class="projects">
+        <a class="project" href="https://j-alicia-long.github.io/todo-now/" target="_blank" rel="noopener">
+          <div class="shot"><img src="{{IMG_TODO}}" alt="Todo Now app screenshot"></div>
+          <div class="project-body">
+            <div class="project-title"><h3>Todo Now</h3><span class="tag">daily driver</span></div>
+            <p>A personalized to-do PWA that lives on my phone — built to track and prioritize tasks across all areas of my life that works for my brain.</p>
+            <div class="links"><span>live site →</span></div>
+          </div>
+        </a>
+        <a class="project" href="https://github.com/j-alicia-long/todo-now" target="_blank" rel="noopener">
+          <div class="shot"><img src="{{IMG_REPORTER}}" alt="In-page bug reporter compose modal with highlighted elements"></div>
+          <div class="project-body">
+            <div class="project-title"><h3>In-page Bug Reporter + auto-triage</h3><span class="tag">built into Todo Now</span></div>
+            <p>A bug reporter built right into my todo app — shake my phone (or ⌘⇧P on desktop) to enter Report Mode, tap the elements involved, and the report files itself as a GitHub issue at the source, instead of getting lost in a notes app. A GitHub Actions automation then triages the issues and fixes the bugs automatically.</p>
+            <div class="links"><span>github →</span></div>
+          </div>
+        </a>
         <a class="project" href="https://j-alicia-long.github.io/footprint/" target="_blank" rel="noopener">
           <div class="shot"><img src="{{IMG_FOOTPRINT}}" alt="AI Carbon Footprint app screenshot"></div>
           <div class="project-body">
@@ -445,26 +475,26 @@
           <div class="shot"><img src="{{IMG_SPEND}}" alt="AI Spend Tracker dashboard screenshot"></div>
           <div class="project-body">
             <div class="project-title"><h3>AI Spend Tracker</h3><span class="tag">accelerator build</span></div>
-            <p>Tracks what AI coding agents actually cost — multi-source ingest into a local store, priced at API-equivalent value, synced to a private dashboard.</p>
+            <p>Tracks what my AI coding agents actually cost per session across tools — multi-source ingest into a local store, priced at API-equivalent value, synced to a private dashboard.</p>
             <div class="links"><span>github →</span></div>
-          </div>
-        </a>
-        <a class="project" href="https://j-alicia-long.github.io/todo-now/" target="_blank" rel="noopener">
-          <div class="shot"><img src="{{IMG_TODO}}" alt="Todo Now app screenshot"></div>
-          <div class="project-body">
-            <div class="project-title"><h3>Todo Now</h3><span class="tag">daily driver</span></div>
-            <p>A personalized to-do PWA that lives on my phone — built to surface a small, doable set of options when I'm overwhelmed, instead of a guilt-inducing wall of tasks.</p>
-            <div class="links"><span>live site →</span></div>
           </div>
         </a>
         <a class="project" href="https://github.com/j-alicia-long/flight-to-gcal" target="_blank" rel="noopener">
           <div class="shot"><img src="{{IMG_FLIGHT}}" alt="Flight to Google Calendar extension screenshot"></div>
           <div class="project-body">
             <div class="project-title"><h3>Flight → Google Calendar</h3><span class="tag">chrome extension</span></div>
-            <p>Auto-detects flight confirmation emails in Gmail (40+ airlines) or takes an .ics upload, then adds the trip to Google Calendar in one click.</p>
+            <p>A simple regex and local LLM-backed tool that takes flight confirmations in Gmail, then adds the trip to Google Calendar in one click.</p>
             <div class="links"><span>github →</span></div>
           </div>
         </a>
+        <div class="project">
+          <div class="shot"><img src="{{IMG_RAVENWOOD}}" alt="Ravenwood Rush game lobby over the Ravenwood commons"></div>
+          <div class="project-body">
+            <div class="project-title"><h3>Ravenwood Rush</h3><span class="tag">co-op browser game</span></div>
+            <p>A Wizard101-themed co-op minigame that runs right in the browser — restore Bartleby's wards before the shadow falls! Peer-to-peer multiplayer over PeerJS, canvas rendering, and no build step. Built purely for fun, with the same TDD-with-agents workflow as everything else.</p>
+            <div class="links"><span>private repo (for now)</span></div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -473,16 +503,11 @@
     <div class="margin-label"><span class="num">04</span>what i took away</div>
     <div>
       <h2>The class <em>changed how I build</em> — here's the trail it left.</h2>
+      <p class="lede">I've collected my favorite skills, keep running docs on agents and MCP servers, and practiced test-driven development.</p>
       <ul class="role-list">
-        <li><span class="n">·</span><strong>Used a bunch of new AI and SWE tooling</strong> — <span class="why">AI agent ecosystems like Zo, Claude Code, Copilot, and Codex. Deployment infra including Cloudflare, Zo, and Github actions + Pages.</span></li>
-        <li><span class="n">·</span><strong>Compiled a personal skills library</strong> — <span class="why"><a href="https://github.com/j-alicia-long/skill-library" target="_blank" rel="noopener">github.com/j-alicia-long/skill-library</a> — portable AI skills that work across tools and projects.</span></li>
-        <li><span class="n">·</span><strong>Learned to apply structured engineering practices to AI development</strong> — <span class="why">via skills like Matt Pocock's /grill-me, which interrogates a plan before any code gets written.</span>
-          <ul class="sub">
-            <li><strong>Built a web-config repo</strong> — <span class="why">my own AGENTS template files, pre-commit hooks, linters, and the rest — so every new project starts with good defaults instead of a blank page.</span></li>
-          </ul>
-        </li>
-        <li><span class="n">·</span><strong>Started personalizing my productivity tools</strong> — <span class="why">like a custom Todo app, and using Obsidian as a personal notes vault.</span></li>
-        <li><span class="n">·</span><strong>Explored ways to track and optimize my AI usage</strong> — <span class="why">which turned into the spend tracker and carbon footprint projects above.</span></li>
+        <li><span class="n">·</span><strong>Got flexible across workflows</strong> — <span class="why">using skills systematically to streamline my engineering flows and reduce review burnout, and using the same tools creatively — prototyping passion projects, or running <code>/grill-me</code> as a research interview.</span></li>
+        <li><span class="n">·</span><strong>Created my harness</strong> — <span class="why">a <a href="https://github.com/j-alicia-long/web-config" target="_blank" rel="noopener"><strong>web-config repo</strong></a>, parallel role sessions, test-driven development with agents, and my own running docs on agents and MCP servers. I love that I can apply structured engineering practices to AI development!</span></li>
+        <li><span class="n">·</span><strong>Compiled a personal skills library</strong> — <span class="why"><a href="https://github.com/j-alicia-long/skill-library" target="_blank" rel="noopener">github.com/j-alicia-long/skill-library</a> — portable AI skills that work across tools and projects. My favorites include Matt Pocock's <code>/grill-me</code> and <code>/tdd</code>, Emil Kowalski's animation &amp; design, and <code>/i-have-adhd</code>.</span></li>
         <li><span class="n">·</span><strong>Feeling a lot more organized — and inspired to build!</strong></li>
       </ul>
     </div>
@@ -507,7 +532,7 @@
     <div>
       <h2>Can we make this <em>official</em>?</h2>
       <div class="prose">
-        <p>If this sounds useful, I'd love to talk about what a TA role could look like for the next cohort, or how we can put together a small group of volunteer TAs together.</p>
+        <p>If this sounds helpful, I'd love to talk about what a TA role could look like for the next cohort, or how we can put together a small group of volunteer TAs together.</p>
         <p>Either way, I'd love to be able to continue participating in this community and having conversations with y'all about the crazy, exciting times we live in.</p>
         <p>Thank you all for building this class. It changed how I work!</p>
       </div>
