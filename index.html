@@ -293,6 +293,13 @@
   }
   .role-list strong { font-weight: 600; }
   .role-list .why { color: var(--ink-soft); }
+  .role-list ul.sub { list-style: none; margin-top: 12px; }
+  .role-list ul.sub li {
+    border-bottom: none;
+    padding: 0 0 0 22px;
+    border-left: 2px solid var(--rule);
+  }
+  .role-list ul.sub li::before { content: none; }
   .hours {
     display: inline-block;
     margin-top: 22px;
@@ -362,8 +369,8 @@
     <div class="margin-label rise">from<br>jennifer long</div>
     <div class="hero-content">
       <div class="eyebrow rise">a pitch, from inside the current cohort</div>
-      <h1 class="rise d1">Hi Andrew and Liam — I'd love to <span class="accent">TA your next cohort</span>.</h1>
-      <p class="hero-intro rise d2">Just wanted to make my case properly, so I built you a page :) I'm Jennifer — <strong>professional software engineer</strong>, current student, and (if the evidence below holds up) kinda already doing the job informally.</p>
+      <h1 class="rise d1">Hi Andrew, Liam, and Priya — I'd love to <span class="accent">TA your next cohort</span>.</h1>
+      <p class="hero-intro rise d2">Just wanted to make my case properly, so I built you a page :)<br>I'm Jennifer — <strong>software engineer</strong>, community + education enthusiast, and newly AI-empowered builder.</p>
     </div>
     <svg class="fern" viewBox="0 0 100 200" fill="none" stroke="#3f6b4a" stroke-width="1.4" stroke-linecap="round">
       <path d="M50 195 C50 140 48 80 50 8"/>
@@ -379,12 +386,12 @@
   <section id="why">
     <div class="margin-label"><span class="num">01</span>why i want this</div>
     <div>
-      <h2>The class gave me a <em>space</em>. I want to keep it open for the next group.</h2>
+      <h2>The class gave me a <em>space</em>. I want to keep it going.</h2>
       <div class="prose">
-        <p>The biggest thing this class gave me wasn't a tool or a technique — it was dedicated space, time, and community for thinking about this stuff. Fifteen hours a week sounds like a lot until you have somewhere to put them, and people to put them with. That's the part I'd love to help foster for the next cohort.</p>
-        <p>I also went through my own up-and-down journey with AI doom before landing somewhere genuinely optimistic. And as a woman software engineer, I've held both feelings at once: very qualified, and very much an imposter — especially while trying to learn AI. Funny how those two can coexist, right?</p>
+        <p>The biggest thing this class gave me wasn't a tool or a technique — it was dedicated space, time, and community for working with this scary AI stuff. That's the part I'd love to help foster for the next cohort.</p>
+        <p>I went through an up-and-down journey with AI doom before landing somewhere genuinely optimistic, through this class. And as a woman software engineer learning new tech, I've held both feelings at once: very qualified, and very much an imposter. Funny how those two can coexist, right?</p>
         <p class="pull">Things you don't understand can scare you. But if you work with them, they get less scary — and you start to see what they can do for you, rather than take from you.</p>
-        <p>That's basically the thesis of your class, and it's why I believe in what you two are building: techno-optimism, learned through community. I'd love to share my journey with students who are sitting in the scared part right now, because I remember exactly what that felt like.</p>
+        <p>This was my motivation for taking your class, and it's why I believe in what you are building: techno-optimism, learned through community. I'd love to help support folks who are sitting in the scared part right now, because I know exactly what that feels like.</p>
       </div>
     </div>
   </section>
@@ -392,7 +399,7 @@
   <section id="already">
     <div class="margin-label"><span class="num">02</span>the evidence</div>
     <div>
-      <h2>I've kinda <em>already</em> been doing the job.</h2>
+      <h2>I've been helping out <em>already!</em></h2>
       <div class="cards">
         <div class="card">
           <h3>Technical help</h3>
@@ -417,7 +424,7 @@
           </ul>
         </div>
       </div>
-      <p class="aside-note">Since the curriculum is designed for professionals who've never written code, having an engineer on call fills a real gap — the kind of debugging that unblocks someone in five minutes instead of derailing their whole week.</p>
+      <p class="aside-note">Since the curriculum has a lot of students who've never written code, having more engineers on call fills a real gap — the kind of debugging that unblocks someone in five minutes instead of derailing their whole week.</p>
     </div>
   </section>
 
@@ -467,10 +474,14 @@
     <div>
       <h2>The class <em>changed how I build</em> — here's the trail it left.</h2>
       <ul class="role-list">
-        <li><span class="n">·</span><strong>Created a personal skills library</strong> — <span class="why"><a href="https://github.com/j-alicia-long/skill-library/" target="_blank" rel="noopener">github.com/j-alicia-long/skill-library</a> — portable AI skills that work across Claude Code, Cursor, Copilot, and Codex.</span></li>
-        <li><span class="n">·</span><strong>Learned to apply structured engineering practices to AI development</strong> — <span class="why">via skills like Matt Pocock's /grill-me, which interrogates a plan before any code gets written.</span></li>
-        <li><span class="n">·</span><strong>Built a web-config repo</strong> — <span class="why">my own AGENTS template files, pre-commit hooks, linters, and the rest — so every new project starts with good defaults instead of a blank page.</span></li>
-        <li><span class="n">·</span><strong>Started personalizing my productivity tools</strong> — <span class="why">like Obsidian for a personal notes vault.</span></li>
+        <li><span class="n">·</span><strong>Used a bunch of new AI and SWE tooling</strong> — <span class="why">AI agent ecosystems like Zo, Claude Code, Copilot, and Codex. Deployment infra including Cloudflare, Zo, and Github actions + Pages.</span></li>
+        <li><span class="n">·</span><strong>Compiled a personal skills library</strong> — <span class="why"><a href="https://github.com/j-alicia-long/skill-library" target="_blank" rel="noopener">github.com/j-alicia-long/skill-library</a> — portable AI skills that work across tools and projects.</span></li>
+        <li><span class="n">·</span><strong>Learned to apply structured engineering practices to AI development</strong> — <span class="why">via skills like Matt Pocock's /grill-me, which interrogates a plan before any code gets written.</span>
+          <ul class="sub">
+            <li><strong>Built a web-config repo</strong> — <span class="why">my own AGENTS template files, pre-commit hooks, linters, and the rest — so every new project starts with good defaults instead of a blank page.</span></li>
+          </ul>
+        </li>
+        <li><span class="n">·</span><strong>Started personalizing my productivity tools</strong> — <span class="why">like a custom Todo app, and using Obsidian as a personal notes vault.</span></li>
         <li><span class="n">·</span><strong>Explored ways to track and optimize my AI usage</strong> — <span class="why">which turned into the spend tracker and carbon footprint projects above.</span></li>
         <li><span class="n">·</span><strong>Feeling a lot more organized — and inspired to build!</strong></li>
       </ul>
@@ -482,9 +493,9 @@
     <div>
       <h2>What I'd actually <em>do</em>, week to week.</h2>
       <ul class="role-list">
-        <li><span class="n">a.</span><strong>Async-first responder on Discord</strong> — <span class="why">answering questions and debugging student projects, since a quick unblock beats a lost afternoon. Live in class when my schedule allows.</span></li>
-        <li><span class="n">b.</span><strong>Coach students on the weekly system</strong> — <span class="why">goals → tasks → devlog → work report → Saturday demo. I built this loop for myself during the cohort, and it's the thing that kept me shipping.</span></li>
-        <li><span class="n">c.</span><strong>More structure in class comms</strong> — <span class="why">polls, sharing threads, celebrating small wins. The community was the best part of the class; a little scaffolding makes it even easier for quieter folks to join in.</span></li>
+        <li><span class="n">a.</span><strong>Async-first responder on Discord</strong> — <span class="why">helping answer questions and unblock student projects. Assist live in class when my schedule allows.</span></li>
+        <li><span class="n">b.</span><strong>Coach students on best practices</strong> — <span class="why">how to align on an idea with your agent, how to find the right tools for your goals, and how to just start building.</span></li>
+        <li><span class="n">c.</span><strong>More structure in class comms</strong> — <span class="why">polls, sharing threads, celebrating small wins. The community improves the class experience, and a little scaffolding makes it even easier for quieter folks to join in.</span></li>
         <li><span class="n">d.</span><strong>Share the journey itself</strong> — <span class="why">the doom-to-empowered arc, the imposter feelings, and what changed. Sometimes the most useful thing a TA can say is "I felt that too, and here's what helped."</span></li>
       </ul>
       <span class="hours">~2–3 hrs/week, alongside my day job</span>
@@ -496,8 +507,9 @@
     <div>
       <h2>Can we make this <em>official</em>?</h2>
       <div class="prose">
-        <p>If this sounds useful, I'd love to talk about what a TA role could look like for the next cohort — compensation open to discussion, and totally fine if the answer is "not this time."</p>
-        <p>Either way, thank you both for building this class. It changed how I work!</p>
+        <p>If this sounds useful, I'd love to talk about what a TA role could look like for the next cohort, or how we can put together a small group of volunteer TAs together.</p>
+        <p>Either way, I'd love to be able to continue participating in this community and having conversations with y'all about the crazy, exciting times we live in.</p>
+        <p>Thank you all for building this class. It changed how I work!</p>
       </div>
       <div class="signoff">
         <div class="thanks">Thanks so much,</div>

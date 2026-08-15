@@ -10,27 +10,28 @@ Edit here, then ask the agent to re-sync the HTML from this file.
 **Margin label:** from jennifer long
 **Eyebrow:** a pitch, from inside the current cohort
 
-**Headline:** Hi Andrew and Liam — I'd love to *TA your next cohort*.
+**Headline:** Hi Andrew, Liam, and Priya — I'd love to *TA your next cohort*.
 
-**Intro:** Just wanted to make my case properly, so I built you a page :) I'm Jennifer — **professional software engineer**, current student, and (if the evidence below holds up) kinda already doing the job informally.
+**Intro:** Just wanted to make my case properly, so I built you a page :)
+I'm Jennifer — **software engineer**, community + education enthusiast, and newly AI-empowered builder.
 
 ---
 
 ## 01 — Why I want this
 
-**Heading:** The class gave me a *space*. I want to keep it open for the next group.
+**Heading:** The class gave me a *space*. I want to keep it going.
 
-The biggest thing this class gave me wasn't a tool or a technique — it was dedicated space, time, and community for thinking about this stuff. Fifteen hours a week sounds like a lot until you have somewhere to put them, and people to put them with. That's the part I'd love to help foster for the next cohort.
+The biggest thing this class gave me wasn't a tool or a technique — it was dedicated space, time, and community for working with this scary AI stuff. That's the part I'd love to help foster for the next cohort.
 
-I also went through my own up-and-down journey with AI doom before landing somewhere genuinely optimistic. And as a woman software engineer, I've held both feelings at once: very qualified, and very much an imposter — especially while trying to learn AI. Funny how those two can coexist, right?
+I went through an up-and-down journey with AI doom before landing somewhere genuinely optimistic, through this class. And as a woman software engineer learning new tech, I've held both feelings at once: very qualified, and very much an imposter. Funny how those two can coexist, right?
 
 > **Pull quote:** Things you don't understand can scare you. But if you work with them, they get less scary — and you start to see what they can do for you, rather than take from you.
 
-That's basically the thesis of your class, and it's why I believe in what you two are building: techno-optimism, learned through community. I'd love to share my journey with students who are sitting in the scared part right now, because I remember exactly what that felt like.
+This was my motivation for taking your class, and it's why I believe in what you are building: techno-optimism, learned through community. I'd love to help support folks who are sitting in the scared part right now, because I know exactly what that feels like.
 
 ---
 
-## 02 — The evidence ("I've kinda *already* been doing the job.")
+## 02 — The evidence ("I've been helping out *already!*")
 
 ### Card: Technical help
 - Helped a classmate turn a **prompt-driven data workflow into a saved, rerunnable script** — moving the AI from runtime to build time, so it's cheaper and deterministic
@@ -45,7 +46,7 @@ That's basically the thesis of your class, and it's why I believe in what you tw
 - Flagged the classic pitfalls for classmates: **scope bloat**, and too much planning without enough **building & iterating**
 - Tried out classmates' projects and gave **hands-on user-testing feedback**
 
-**Aside note:** Since the curriculum is designed for professionals who've never written code, having an engineer on call fills a real gap — the kind of debugging that unblocks someone in five minutes instead of derailing their whole week.
+**Aside note:** Since the curriculum has a lot of students who've never written code, having more engineers on call fills a real gap — the kind of debugging that unblocks someone in five minutes instead of derailing their whole week.
 
 ---
 
@@ -71,10 +72,11 @@ Auto-detects flight confirmation emails in Gmail (40+ airlines) or takes an .ics
 
 ## 04 — What I took away ("The class *changed how I build* — here's the trail it left.")
 
-- **Created a personal skills library** — https://github.com/j-alicia-long/skill-library/ — portable AI skills that work across Claude Code, Cursor, Copilot, and Codex.
+- **Used a bunch of new AI and SWE tooling** — AI agent ecosystems like Zo, Claude Code, Copilot, and Codex. Deployment infra including Cloudflare, Zo, and Github actions + Pages.
+- **Compiled a personal skills library** — https://github.com/j-alicia-long/skill-library — portable AI skills that work across tools and projects.
 - **Learned to apply structured engineering practices to AI development** — via skills like Matt Pocock's /grill-me, which interrogates a plan before any code gets written.
-- **Built a web-config repo** — my own AGENTS template files, pre-commit hooks, linters, and the rest — so every new project starts with good defaults instead of a blank page.
-- **Started personalizing my productivity tools** — like Obsidian for a personal notes vault.
+    - **Built a web-config repo** — my own AGENTS template files, pre-commit hooks, linters, and the rest — so every new project starts with good defaults instead of a blank page.
+- **Started personalizing my productivity tools** — like a custom Todo app, and using Obsidian as a personal notes vault.
 - **Explored ways to track and optimize my AI usage** — which turned into the spend tracker and carbon footprint projects above.
 - **Feeling a lot more organized — and inspired to build!**
 
@@ -82,9 +84,9 @@ Auto-detects flight confirmation emails in Gmail (40+ airlines) or takes an .ics
 
 ## 05 — The role ("What I'd actually *do*, week to week.")
 
-- **Async-first responder on Discord** — answering questions and debugging student projects, since a quick unblock beats a lost afternoon. Live in class when my schedule allows.
-- **Coach students on the weekly system** — goals → tasks → devlog → work report → Saturday demo. I built this loop for myself during the cohort, and it's the thing that kept me shipping.
-- **More structure in class comms** — polls, sharing threads, celebrating small wins. The community was the best part of the class; a little scaffolding makes it even easier for quieter folks to join in.
+- **Async-first responder on Discord** — helping answer questions and unblock student projects. Assist live in class when my schedule allows.
+- **Coach students on best practices** — how to align on an idea with your agent, how to find the right tools for your goals, and how to just start building.
+- **More structure in class comms** — polls, sharing threads, celebrating small wins. The community improves the class experience, and a little scaffolding makes it even easier for quieter folks to join in.
 - **Share the journey itself** — the doom-to-empowered arc, the imposter feelings, and what changed. Sometimes the most useful thing a TA can say is "I felt that too, and here's what helped."
 
 **Badge:** ~2–3 hrs/week, alongside my day job
@@ -93,9 +95,11 @@ Auto-detects flight confirmation emails in Gmail (40+ airlines) or takes an .ics
 
 ## 06 — The ask ("Can we make this *official*?")
 
-If this sounds useful, I'd love to talk about what a TA role could look like for the next cohort — compensation open to discussion, and totally fine if the answer is "not this time."
+If this sounds useful, I'd love to talk about what a TA role could look like for the next cohort, or how we can put together a small group of volunteer TAs together.
 
-Either way, thank you both for building this class. It changed how I work!
+Either way, I'd love to be able to continue participating in this community and having conversations with y'all about the crazy, exciting times we live in.
+
+Thank you all for building this class. It changed how I work!
 
 **Sign-off:**
 Thanks so much,
