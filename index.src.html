@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A TA pitch, from inside the cohort — Jennifer Long</title>
+<meta name="description" content="Jennifer Long's pitch to TA the next Fractal Accelerator cohort.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&family=Spline+Sans+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #f6f0e4;
+    --paper-deep: #efe6d4;
+    --ink: #2b241a;
+    --ink-soft: #5c5344;
+    --terracotta: #bc5632;
+    --terracotta-deep: #9c4526;
+    --leaf: #3f6b4a;
+    --leaf-soft: #6d8f77;
+    --rule: #d8cbb2;
+    --card: #fffdf8;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Newsreader', Georgia, serif;
+    font-size: 1.145rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+  }
+  /* paper grain */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1000;
+    opacity: 0.5;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.035 0'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  .page {
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  /* ---------- letter grid: mono marginalia left, content right ---------- */
+  section, header.hero {
+    display: grid;
+    grid-template-columns: 180px minmax(0, 1fr);
+    gap: 0 48px;
+    padding: 72px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  .margin-label {
+    font-family: 'Spline Sans Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--terracotta);
+    padding-top: 0.55em;
+    position: sticky;
+    top: 32px;
+    align-self: start;
+  }
+  .margin-label .num {
+    display: block;
+    color: var(--ink-soft);
+    margin-bottom: 4px;
+  }
+  /* ---------- hero ---------- */
+  header.hero {
+    padding-top: 96px;
+    padding-bottom: 84px;
+    position: relative;
+    overflow: visible;
+  }
+  .hero-content { max-width: 640px; }
+  .eyebrow {
+    font-family: 'Spline Sans Mono', monospace;
+    font-size: 0.78rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--leaf);
+    margin-bottom: 28px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .eyebrow::before {
+    content: '';
+    width: 34px;
+    height: 1px;
+    background: var(--leaf);
+  }
+  h1 {
+    font-family: 'Fraunces', serif;
+    font-optical-sizing: auto;
+    font-weight: 560;
+    font-size: clamp(2.3rem, 5.4vw, 3.7rem);
+    line-height: 1.08;
+    letter-spacing: -0.015em;
+    margin-bottom: 34px;
+  }
+  h1 .accent {
+    font-style: italic;
+    color: var(--terracotta);
+    font-weight: 480;
+  }
+  .hero-intro { font-size: 1.22rem; color: var(--ink-soft); max-width: 56ch; }
+  .hero-intro strong { color: var(--ink); font-weight: 600; }
+  /* decorative fern */
+  .fern {
+    position: absolute;
+    right: -30px;
+    top: 70px;
+    width: 210px;
+    opacity: 0.16;
+    transform: rotate(8deg);
+    pointer-events: none;
+  }
+  /* ---------- section headings ---------- */
+  h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 540;
+    font-size: clamp(1.7rem, 3.4vw, 2.35rem);
+    line-height: 1.14;
+    letter-spacing: -0.01em;
+    margin-bottom: 30px;
+    max-width: 22ch;
+  }
+  h2 em { font-style: italic; color: var(--leaf); font-weight: 480; }
+  /* ---------- reflective prose ---------- */
+  .prose { max-width: 60ch; }
+  .prose p { margin-bottom: 1.35em; }
+  .prose p:last-child { margin-bottom: 0; }
+  .prose .pull {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1.42rem;
+    line-height: 1.4;
+    color: var(--terracotta-deep);
+    border-left: 3px solid var(--terracotta);
+    padding: 6px 0 6px 26px;
+    margin: 1.7em 0;
+  }
+  /* ---------- evidence cards ---------- */
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+    margin-top: 8px;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    padding: 28px 26px 26px;
+    position: relative;
+    box-shadow: 0 1px 0 rgba(43,36,26,0.04);
+  }
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 24px;
+    width: 44px; height: 3px;
+    background: var(--terracotta);
+  }
+  .card:nth-child(2)::before { background: var(--leaf); }
+  .card:nth-child(3)::before { background: #c99a2e; }
+  .card h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 580;
+    font-size: 1.18rem;
+    margin-bottom: 14px;
+  }
+  .card ul { list-style: none; }
+  .card li {
+    font-size: 1.0rem;
+    line-height: 1.5;
+    color: var(--ink-soft);
+    padding-left: 18px;
+    position: relative;
+    margin-bottom: 11px;
+  }
+  .card li::before {
+    content: '·';
+    position: absolute;
+    left: 2px;
+    color: var(--terracotta);
+    font-weight: 700;
+  }
+  .card li strong { color: var(--ink); font-weight: 600; }
+  .aside-note {
+    margin-top: 26px;
+    max-width: 60ch;
+    font-style: italic;
+    color: var(--ink-soft);
+    font-size: 1.05rem;
+  }
+  /* ---------- projects ---------- */
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 26px;
+    margin-top: 6px;
+  }
+  .project {
+    background: var(--card);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.28s cubic-bezier(.2,.7,.3,1), box-shadow 0.28s;
+  }
+  .project:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 34px -14px rgba(43,36,26,0.28);
+  }
+  .shot {
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    background: var(--paper-deep);
+    border-bottom: 1px solid var(--rule);
+  }
+  .shot img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+    transition: transform 0.5s ease;
+  }
+  .project:hover .shot img { transform: scale(1.025); }
+  .project-body { padding: 22px 24px 24px; }
+  .project-title {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 10px;
+  }
+  .project-title h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 1.22rem;
+  }
+  .tag {
+    font-family: 'Spline Sans Mono', monospace;
+    font-size: 0.66rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--leaf);
+    white-space: nowrap;
+    border: 1px solid var(--leaf-soft);
+    border-radius: 99px;
+    padding: 3px 9px;
+  }
+  .project p { font-size: 0.99rem; color: var(--ink-soft); line-height: 1.55; margin-bottom: 12px; }
+  .links {
+    font-family: 'Spline Sans Mono', monospace;
+    font-size: 0.78rem;
+    display: flex;
+    gap: 18px;
+  }
+  .links span {
+    color: var(--terracotta);
+    border-bottom: 1px solid transparent;
+  }
+  .project:hover .links span { border-bottom-color: var(--terracotta); }
+  /* ---------- role ---------- */
+  .role-list { list-style: none; max-width: 62ch; }
+  .role-list li {
+    padding: 20px 0 20px 40px;
+    border-bottom: 1px dashed var(--rule);
+    position: relative;
+  }
+  .role-list li:last-child { border-bottom: none; }
+  .role-list .n {
+    position: absolute;
+    left: 0;
+    top: 22px;
+    font-family: 'Spline Sans Mono', monospace;
+    font-size: 0.8rem;
+    color: var(--terracotta);
+  }
+  .role-list strong { font-weight: 600; }
+  .role-list .why { color: var(--ink-soft); }
+  .hours {
+    display: inline-block;
+    margin-top: 22px;
+    font-family: 'Spline Sans Mono', monospace;
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+    color: var(--leaf);
+    background: rgba(63,107,74,0.09);
+    border: 1px solid rgba(63,107,74,0.25);
+    border-radius: 99px;
+    padding: 7px 16px;
+  }
+  /* ---------- ask / sign-off ---------- */
+  .ask { border-bottom: none; padding-bottom: 40px; }
+  .ask .prose { font-size: 1.18rem; }
+  .signoff {
+    margin-top: 44px;
+    font-family: 'Fraunces', serif;
+  }
+  .signoff .thanks { font-size: 1.15rem; margin-bottom: 6px; }
+  .signoff .name {
+    font-style: italic;
+    font-weight: 560;
+    font-size: 2rem;
+    color: var(--terracotta-deep);
+  }
+  footer {
+    padding: 26px 0 56px;
+    font-family: 'Spline Sans Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  a { color: var(--terracotta-deep); }
+  /* ---------- load animation ---------- */
+  @keyframes rise {
+    from { opacity: 0; transform: translateY(18px); }
+    to { opacity: 1; transform: none; }
+  }
+  .rise { animation: rise 0.7s cubic-bezier(.2,.7,.3,1) both; }
+  .d1 { animation-delay: 0.05s; }
+  .d2 { animation-delay: 0.16s; }
+  .d3 { animation-delay: 0.27s; }
+  @media (prefers-reduced-motion: reduce) {
+    .rise { animation: none; }
+    .project, .shot img { transition: none; }
+  }
+  /* ---------- responsive ---------- */
+  @media (max-width: 800px) {
+    section, header.hero { grid-template-columns: 1fr; gap: 18px 0; padding: 52px 0; }
+    .margin-label { position: static; }
+    .projects { grid-template-columns: 1fr; }
+    .fern { display: none; }
+    body { font-size: 1.08rem; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="hero">
+    <div class="margin-label rise">from<br>jennifer long</div>
+    <div class="hero-content">
+      <div class="eyebrow rise">a pitch, from inside the current cohort</div>
+      <h1 class="rise d1">Hi Andrew and Liam — I'd love to <span class="accent">TA your next cohort</span>.</h1>
+      <p class="hero-intro rise d2">Just wanted to make my case properly, so I built you a page :) I'm Jennifer — <strong>professional software engineer</strong>, current student, and (if the evidence below holds up) kinda already doing the job informally.</p>
+    </div>
+    <svg class="fern" viewBox="0 0 100 200" fill="none" stroke="#3f6b4a" stroke-width="1.4" stroke-linecap="round">
+      <path d="M50 195 C50 140 48 80 50 8"/>
+      <path d="M50 30 Q30 22 18 4"/><path d="M50 30 Q70 22 82 4"/>
+      <path d="M50 55 Q28 48 12 32"/><path d="M50 55 Q72 48 88 32"/>
+      <path d="M50 82 Q26 76 8 62"/><path d="M50 82 Q74 76 92 62"/>
+      <path d="M50 110 Q28 106 10 94"/><path d="M50 110 Q72 106 90 94"/>
+      <path d="M50 138 Q30 136 14 126"/><path d="M50 138 Q70 136 86 126"/>
+      <path d="M50 164 Q34 163 22 156"/><path d="M50 164 Q66 163 78 156"/>
+    </svg>
+  </header>
+
+  <section id="why">
+    <div class="margin-label"><span class="num">01</span>why i want this</div>
+    <div>
+      <h2>The class gave me a <em>space</em>. I want to keep it open for the next group.</h2>
+      <div class="prose">
+        <p>The biggest thing this class gave me wasn't a tool or a technique — it was dedicated space, time, and community for thinking about this stuff. Fifteen hours a week sounds like a lot until you have somewhere to put them, and people to put them with. That's the part I'd love to help foster for the next cohort.</p>
+        <p>I also went through my own up-and-down journey with AI doom before landing somewhere genuinely optimistic. And as a woman software engineer, I've held both feelings at once: very qualified, and very much an imposter — especially while trying to learn AI. Funny how those two can coexist, right?</p>
+        <p class="pull">Things you don't understand can scare you. But if you work with them, they get less scary — and you start to see what they can do for you, rather than take from you.</p>
+        <p>That's basically the thesis of your class, and it's why I believe in what you two are building: techno-optimism, learned through community. I'd love to share my journey with students who are sitting in the scared part right now, because I remember exactly what that felt like.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="already">
+    <div class="margin-label"><span class="num">02</span>the evidence</div>
+    <div>
+      <h2>I've kinda <em>already</em> been doing the job.</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Technical help</h3>
+          <ul>
+            <li>Helped a classmate turn a <strong>prompt-driven data workflow into a saved, rerunnable script</strong> — moving the AI from runtime to build time, so it's cheaper and deterministic</li>
+            <li>Shared how to make a <strong>progressive web app</strong> you can install to your phone, and where to find <strong>free hosting</strong></li>
+            <li>Showed folks how to ask the agent for <strong>automated regression tests</strong> so old bugs stay fixed</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Community</h3>
+          <ul>
+            <li>Frequently shared <strong>resources and events</strong> in Discord — Matt Pocock's engineering skill library, Rundown AI's community bulletin board, Zo Computer's community vibe-coding event</li>
+            <li>I genuinely enjoy <strong>talking with people about their projects</strong> — and about their relationship with AI</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Engineering wisdom</h3>
+          <ul>
+            <li>Flagged the classic pitfalls for classmates: <strong>scope bloat</strong>, and too much planning without enough <strong>building &amp; iterating</strong></li>
+            <li>Tried out classmates' projects and gave <strong>hands-on user-testing feedback</strong></li>
+          </ul>
+        </div>
+      </div>
+      <p class="aside-note">Since the curriculum is designed for professionals who've never written code, having an engineer on call fills a real gap — the kind of debugging that unblocks someone in five minutes instead of derailing their whole week.</p>
+    </div>
+  </section>
+
+  <section id="ship">
+    <div class="margin-label"><span class="num">03</span>proof i ship</div>
+    <div>
+      <h2>Built weekly, demoed Saturdays, <em>live now</em>.</h2>
+      <div class="projects">
+        <a class="project" href="https://j-alicia-long.github.io/footprint/" target="_blank" rel="noopener">
+          <div class="shot"><img src="{{IMG_FOOTPRINT}}" alt="AI Carbon Footprint app screenshot"></div>
+          <div class="project-body">
+            <div class="project-title"><h3>AI Carbon Footprint</h3><span class="tag">accelerator build</span></div>
+            <p>What does an everyday AI activity cost the planet? Preset scenarios translated into energy, carbon, and familiar equivalents — every number cited, with uncertainty bands.</p>
+            <div class="links"><span>live site →</span></div>
+          </div>
+        </a>
+        <a class="project" href="https://github.com/j-alicia-long/ai-spend-tracker" target="_blank" rel="noopener">
+          <div class="shot"><img src="{{IMG_SPEND}}" alt="AI Spend Tracker dashboard screenshot"></div>
+          <div class="project-body">
+            <div class="project-title"><h3>AI Spend Tracker</h3><span class="tag">accelerator build</span></div>
+            <p>Tracks what AI coding agents actually cost — multi-source ingest into a local store, priced at API-equivalent value, synced to a private dashboard.</p>
+            <div class="links"><span>github →</span></div>
+          </div>
+        </a>
+        <a class="project" href="https://j-alicia-long.github.io/todo-now/" target="_blank" rel="noopener">
+          <div class="shot"><img src="{{IMG_TODO}}" alt="Todo Now app screenshot"></div>
+          <div class="project-body">
+            <div class="project-title"><h3>Todo Now</h3><span class="tag">daily driver</span></div>
+            <p>A personalized to-do PWA that lives on my phone — built to surface a small, doable set of options when I'm overwhelmed, instead of a guilt-inducing wall of tasks.</p>
+            <div class="links"><span>live site →</span></div>
+          </div>
+        </a>
+        <a class="project" href="https://github.com/j-alicia-long/flight-to-gcal" target="_blank" rel="noopener">
+          <div class="shot"><img src="{{IMG_FLIGHT}}" alt="Flight to Google Calendar extension screenshot"></div>
+          <div class="project-body">
+            <div class="project-title"><h3>Flight → Google Calendar</h3><span class="tag">chrome extension</span></div>
+            <p>Auto-detects flight confirmation emails in Gmail (40+ airlines) or takes an .ics upload, then adds the trip to Google Calendar in one click.</p>
+            <div class="links"><span>github →</span></div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="wins">
+    <div class="margin-label"><span class="num">04</span>what i took away</div>
+    <div>
+      <h2>The class <em>changed how I build</em> — here's the trail it left.</h2>
+      <ul class="role-list">
+        <li><span class="n">·</span><strong>Created a personal skills library</strong> — <span class="why"><a href="https://github.com/j-alicia-long/skill-library/" target="_blank" rel="noopener">github.com/j-alicia-long/skill-library</a> — portable AI skills that work across Claude Code, Cursor, Copilot, and Codex.</span></li>
+        <li><span class="n">·</span><strong>Learned to apply structured engineering practices to AI development</strong> — <span class="why">via skills like Matt Pocock's /grill-me, which interrogates a plan before any code gets written.</span></li>
+        <li><span class="n">·</span><strong>Built a web-config repo</strong> — <span class="why">my own AGENTS template files, pre-commit hooks, linters, and the rest — so every new project starts with good defaults instead of a blank page.</span></li>
+        <li><span class="n">·</span><strong>Started personalizing my productivity tools</strong> — <span class="why">like Obsidian for a personal notes vault.</span></li>
+        <li><span class="n">·</span><strong>Explored ways to track and optimize my AI usage</strong> — <span class="why">which turned into the spend tracker and carbon footprint projects above.</span></li>
+        <li><span class="n">·</span><strong>Feeling a lot more organized — and inspired to build!</strong></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="role">
+    <div class="margin-label"><span class="num">05</span>the role</div>
+    <div>
+      <h2>What I'd actually <em>do</em>, week to week.</h2>
+      <ul class="role-list">
+        <li><span class="n">a.</span><strong>Async-first responder on Discord</strong> — <span class="why">answering questions and debugging student projects, since a quick unblock beats a lost afternoon. Live in class when my schedule allows.</span></li>
+        <li><span class="n">b.</span><strong>Coach students on the weekly system</strong> — <span class="why">goals → tasks → devlog → work report → Saturday demo. I built this loop for myself during the cohort, and it's the thing that kept me shipping.</span></li>
+        <li><span class="n">c.</span><strong>More structure in class comms</strong> — <span class="why">polls, sharing threads, celebrating small wins. The community was the best part of the class; a little scaffolding makes it even easier for quieter folks to join in.</span></li>
+        <li><span class="n">d.</span><strong>Share the journey itself</strong> — <span class="why">the doom-to-empowered arc, the imposter feelings, and what changed. Sometimes the most useful thing a TA can say is "I felt that too, and here's what helped."</span></li>
+      </ul>
+      <span class="hours">~2–3 hrs/week, alongside my day job</span>
+    </div>
+  </section>
+
+  <section id="ask" class="ask">
+    <div class="margin-label"><span class="num">06</span>the ask</div>
+    <div>
+      <h2>Can we make this <em>official</em>?</h2>
+      <div class="prose">
+        <p>If this sounds useful, I'd love to talk about what a TA role could look like for the next cohort — compensation open to discussion, and totally fine if the answer is "not this time."</p>
+        <p>Either way, thank you both for building this class. It changed how I work!</p>
+      </div>
+      <div class="signoff">
+        <div class="thanks">Thanks so much,</div>
+        <div class="name">Jennifer</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>jennifer long · fractal accelerator, summer 2026 cohort</span>
+    <span><a href="https://github.com/j-alicia-long" target="_blank" rel="noopener" style="color:inherit">github.com/j-alicia-long</a></span>
+  </footer>
+
+</div>
+<script>
+  // stagger-reveal sections on scroll
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('rise'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('section > div:last-child').forEach(el => io.observe(el));
+</script>
+</body>
+</html>
